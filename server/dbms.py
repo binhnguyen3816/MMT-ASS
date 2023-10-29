@@ -1,21 +1,22 @@
-from database import chatapp
+from database import fileSharingApp
 import copy
 
 class DBMS:
     def __init__(self):
         pass
-    def checkLogin(self, username, password):
-        for d in chatapp.authentication:
-            if d['username'] == username and d['password'] == password:
+    def Login(self, username, password):
+        for dataTuple in fileSharingApp.client:
+            if dataTuple['username'] == username and dataTuple['password'] == password:
                 return True
+                #UpdateHostName(IP)
         return False
         
-    def checkSignup(self,username, pw):
-        for d in chatapp.authentication:
-            if d['username']==username:
-                return True #already exist
+    def Signup(self,username, password, IP):
+        for dataTuple in fileSharingApp.client:
+            if dataTuple['username'] == username:
+                return True #username already exist
             
-        chatapp.authentication.append({'username':username, 'password':pw})
+        fileSharingApp.client.append({'username':username, 'password':password, 'IP': IP})
         return False 
     
     
