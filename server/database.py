@@ -9,12 +9,12 @@ class FileSharingApp:
         ]
         self.File = [
             {"username": "smithdavid0301", "lname": "Computer Networking _ A Top Down Approach, 7th, converted.pdf",
-            "fname": "Computer Networking _ A Top Down Approach, 7th", "directory": "E:\Documents\HK231\ComputerNetworks"},
+            "fname": "Computer Networking _ A Top Down Approach, 7th"},
             {"username": "smithdavid0301", "lname": "2021_MT_KHM_KHMT.pdf",
-            "fname": "2021_MT_KHM_KHMT.pdf", "directory": "E:\Documents\hcmut"},
+            "fname": "2021_MT_KHM_KHMT.pdf"},
             {"username": "britney123", "lname": "Operating System Concepts.pdf",
-            "fname": "Operating System Concepts", "directory": "E:\Documents\HK222\Operating System"},
+            "fname": "Operating System Concepts"},
             {"username": "annabelle2803", "lname": "cs2warmup_refrag.vpk",
-            "fname": "CounterStrike2WarmUpCommnunityMap", "directory": "E:\Downloads"}
+            "fname": "CounterStrike2WarmUpCommnunityMap"}
         ]
 fileSharingApp = FileSharingApp()
