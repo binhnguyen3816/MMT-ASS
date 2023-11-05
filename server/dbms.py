@@ -18,6 +18,13 @@ class DBMS:
             
         fileSharingApp.client.append({'username':username, 'password':password, 'IP': IP})
         return False 
-    
-    
+    # find filenames of a user
+    def peek(self, uusername):
+        for item in fileSharingApp.File:
+            if item['username']==uusername:
+                print(f"{item['lname']} - {item['fname']}")    
+    def show(self):
+        for item in fileSharingApp.client:
+            print(item['username'])
+            self.peek(item['username'])
 dbms = DBMS()

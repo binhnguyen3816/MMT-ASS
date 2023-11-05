@@ -15,4 +15,15 @@ SERVER  = {
 }
 
 class Server:
-    pass
+    def __init__(self):
+        self.server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        self.server.bind((SERVER["IP"], SERVER["PORT"]))
+        self.server.listen(20)
+        self.online = {}
+        # self.sender_mutex = Lock()
+    def show(self):
+        dbms.show()
+    def discover(self, hostname):
+        dbms.peek(hostname)
+    
+server=Server()

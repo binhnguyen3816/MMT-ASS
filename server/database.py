@@ -1,11 +1,11 @@
 class FileSharingApp:
     def __init__(self):
         self.client = [
-            {'username': 'smithdavid0301', 'password': '123456', 'IP': '10.229.65.33'},
-            {'username': 'jackmike0104', 'password': 'mike0123', 'IP': '128.199.245.12 '},
-            {'username': 'annabelle2803', 'password': 'Bella2002', 'IP': '192.168.1.102'},
-            {'username': 'britney123', 'password': 'spear456', 'IP': '128.119.245.12'},
-            {'username': 'raythecrayon', 'password': 'ray2802', 'IP': '199.232.46.133'},
+            {'username': 'smithdavid0301', 'password': '123456', 'IP': '10.229.65.33', 'PORT': 5050},
+            {'username': 'jackmike0104', 'password': 'mike0123', 'IP': '128.199.245.12 ', 'PORT': 5050},
+            {'username': 'annabelle2803', 'password': 'Bella2002', 'IP': '192.168.1.102', 'PORT': 5050},
+            {'username': 'britney123', 'password': 'spear456', 'IP': '128.119.245.12', 'PORT': 5050},
+            {'username': 'raythecrayon', 'password': 'ray2802', 'IP': '199.232.46.133', 'PORT': 5050},
         ]
         self.File = [
             {"username": "smithdavid0301", "lname": "Computer Networking _ A Top Down Approach, 7th, converted.pdf",
